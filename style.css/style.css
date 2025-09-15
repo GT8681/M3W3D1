@@ -1,0 +1,79 @@
+body{
+    background-color: #364052;
+}
+.container-fluid{
+    background-color: #364052;
+}
+.carousel-item img{
+    width: 100px;
+}
+.carousel-item img {
+    width: 100%; /* o una dimensione fissa, ad esempio 800px */
+    height: 700px; /* o una dimensione fissa */
+    object-fit: contain; /* o contain, a seconda dell'effetto desiderato */
+}
+
+.carosello-container {
+    display: flex; /* Immagini una accanto all'altra */
+    overflow-x: auto; /* Abilita lo scorrimento orizzontale */
+    /* Aggiungi qui le dimensioni del tuo contenitore */
+    width: 100%;
+    height: 200px; /* Esempio */
+    white-space: nowrap; /* Impedisce alle immagini di andare a capo */
+  }
+
+  .carosello-container img {
+    /* Imposta la larghezza di ogni immagine */
+    width: 150px; /* Esempio */
+    height: 100%; /* Per adattarsi al contenitore */
+    object-fit: cover; /* Assicura che l'immagine riempia lo spazio senza distorcersi */
+    margin-right: 10px; /* Spazio tra le immagini */
+  }
+  html,
+  body {
+    position: relative;
+    height: 100%;
+  }
+
+  body {
+    
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+  }
+
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 10px;
+    background: #444;
+    display: flex;
+    justify-content: center;
+      align-items: center;
+   
+   
+    
+   
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .swiper {
+    width: 100%;
+    height: 150px;
+    margin: 10px auto;
+  }
+
+
+  
