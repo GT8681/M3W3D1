@@ -1,5 +1,6 @@
-var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 8,
+const swiper = new Swiper(".mySwiper", {
+  slidesPerView: 10,
+  centeredSlides:true,
   centeredSlides: true,
   spaceBetween: 0,
   pagination: {

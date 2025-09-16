@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./style.css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -19,10 +20,10 @@
         <div class="container-fluid p-3">
             <div class="row ">
                 <div class="col-9 ">
-                    <div class="d-flex">
-                        <div class="navgt d-flex gap-3  align-items-center">
+                    <div class="d-flex align-items-center">
+                        <div class="navgt d-flex gap-3 ">
 
-                            <img src="./assets/logo.svg.png" width="120px" alt="logo amazon prime">
+                            <img class="d-none d-lg-bloc" src="./assets/logo.svg.png" width="120px" alt="logo amazon prime">
 
                             <ul class="navbar-nav ">
                                 <li class="nav-item">
@@ -60,26 +61,37 @@
 
             <div class="row">
                 <div class="col-3 ">
-                    <div class="d-flex gap-3 ">
-                        <img src="./assets/image (1).png" width="40px" alt="">
-                        <img src="./assets/image.png" width="40px" alt="">
+                    <div class="d-flex gap-3  align-items-center">
+                        <div class="d-flex gap-3 align-items-center" >
+                            <input  type="text" placeholder="Search">
+                            <div class="lente">
+                               
+                            <img class="imgLent" src="./assets/image (1).png" width="20px" alt="">
+                            </div>
 
-                        <ul class="user list-unstyled">
-                            <li class="nav-item dropdown name">
-                                <a class="nav-link dropdown-toggle text-white text-truncate" href="#" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Stefano martino
-                                </a>
-                                <ul class="dropdown-menu list-unstyled">
-                                    <li><a class="dropdown-item" href="#">Azione</a></li>
-                                    <li><a class="dropdown-item" href="#">Horror</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Drammatico</a></li>
-                                </ul>
-                            </li>
-                        </ul>
+                            
+                            <img  src="./assets/image.png" width="25px" alt="">
+                        </div>
+
+                        <div>
+                            <ul class="user list-unstyled">
+                                <li class="nav-item dropdown name">
+                                    <a class="nav-link dropdown-toggle text-white text-truncate" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Stefano martino
+                                    </a>
+                                    <ul class="dropdown-menu list-unstyled">
+                                        <li><a class="dropdown-item" href="#">Azione</a></li>
+                                        <li><a class="dropdown-item" href="#">Horror</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Drammatico</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+
 
                     </div>
                 </div>
@@ -87,64 +99,76 @@
         </div>
     </nav>
 
-    <section>
-        <div class="conteiner">
-            <div class="row">
-                <div class="col-12">
-                    <div id="carouselExample1" class="carousel slide">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="./assets/gladiator.jpg" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./assets/hyptonic.jpg" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./assets/napoleon.jpg" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./assets/TitanicFilm.jpg" class="d-block w-100" alt="...">
-                            </div>
+    <div class="hero">
+    </div>
+    <div class="conteiner">
+        <div class="row">
+            <div class="col-12">
+                <div id="carouselExample1" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="img-fluid" src="./assets/imaggine principale.webp" class="d-block w-100" alt="...">
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample1"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample1"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
+                        <div class="carousel-item">
+                            <img class="img-fluid" src="./assets/TitanicFilm.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/TitanicFilm.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="img-fluid" src="./assets/TitanicFilm.jpg" class="d-block w-100" alt="...">
+                        </div>
                     </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample1"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample1"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+    </hero>
 
     <section>
         <div class="conteiner">
-            <div class="eow">
-                <div class="col-12">
+            <div class="row">
+                <div class="title p-lg-3 d-flex gap-2 align-items-center">
+                    <span class="text-info fs-4 fw-bold">prime</span>
+                    <span class="fs-6">Amazon Originals and Exclusives</span>
+                    <span></span>
+                    <span><a  href="#" class="text-decoration-none">See more</a></span>
+                </div>
+                <div class="col-lg-12">
                     <div #swiperRef="" class="swiper mySwiper" id="slide">
-                        <div class="swiper-wrapper ">
-                            <div class="swiper-slide"><img src="./assets/gladiator.jpg" alt=""></div>
-                            <div class="swiper-slide"><img src="./assets/harry.webp" alt=""></div>
-                            <div class="swiper-slide"><img src="./assets/hyptonic.jpg" alt=""></div>
-                            <div class="swiper-slide"><img src="./assets/napoleon.jpg" alt=""></div>
-                            <div class="swiper-slide"><img src="./assets/TitanicFilm.jpg" alt=""></div>
-                            <div class="swiper-slide"><img src="./assets/gladiator.jpg" alt=""></div>
-                            <div class="swiper-slide"><img src="./assets/gladiator.jpg" alt=""></div>
-                            <div class="swiper-slide"><img src="./assets/gladiator.jpg" alt=""></div>
-                            <div class="swiper-slide"><img src="./assets/gladiator.jpg" alt=""></div>
+                        <div class="swiper-wrapper d-flex align-content-start">
+                            <div class="swiper-slide"><img class="img-fluid" src="./assets/gladiator.jpg" alt=""></div>
+                            <div class="swiper-slide"><img class="img-fluid" src="./assets/harry.webp" alt=""></div>
+                            <div class="swiper-slide"><img class="img-fluid" src="./assets/hyptonic.jpg" alt=""></div>
+                            <div class="swiper-slide"><img class="img-fluid" src="./assets/napoleon.jpg" alt=""></div>
+                            <div class="swiper-slide"><img class="img-fluid" src="./assets/TitanicFilm.jpg" alt=""> </div>
+                            <div class="swiper-slide"><img class="img-fluid" src="./assets/gladiator.jpg" alt=""></div>
+                            <div class="swiper-slide"><img class="img-fluid" src="./assets/gladiator.jpg" alt=""></div>
+                            <div class="swiper-slide"><img class="img-fluid" src="./assets/gladiator.jpg" alt=""></div>
+                            <div class="swiper-slide"><img class="img-fluid" src="./assets/gladiator.jpg" alt=""></div>
+                            <div class="swiper-slide"><img class="img-fluid" src="./assets/gladiator.jpg" alt=""></div>
+                            <div class="swiper-slide"><img class="img-fluid" src="./assets/gladiator.jpg" alt=""></div>
+                            <div class="swiper-slide"><img class="img-fluid" src="./assets/gladiator.jpg" alt=""></div>
 
                         </div>
                         <div class="swiper-button-next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="carousel-control-next-icon" aria-hidden="true" data-bs-target="#slide"
+                                data-bs-slide="next"></span>
                             <span class="visually-hidden">Next</span>
                         </div>
                         <div class="swiper-button-prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="carousel-control-prev-icon" aria-hidden="true" data-bs-target="#slide"
+                                data-bs-slide="prev"></span>
                             <span class="visually-hidden">Previous</span>
                         </div>
                         <div class="swiper-pagination"></div>
@@ -158,40 +182,53 @@
 
     <section>
         <div class="conteiner">
+
             <div class="row">
+                <div class="title p-lg-3 d-flex gap-2 align-items-center">
+                    <span class="text-info fs-4 fw-bold">prime</span>
+                    <span class="fs-6">Popular movies</span>
+                    <span></span>
+                    <span><a  href="#" class="text-decoration-none">See more</a></span>
+                </div>
+
+
                 <div class="col-12">
                     <div #swiperRef="" class="swiper mySwiper">
-                        <div class="swiper-wrapper ">
-                            <div class="swiper-slide"><img src="./assets/gladiator.jpg" alt=""></div>
-                            <div class="swiper-slide"><img src="./assets/gladiator.jpg" alt=""></div>
-                            <div class="swiper-slide"><img src="./assets/gladiator.jpg" alt=""></div>
-                            <div class="swiper-slide"><img src="./assets/gladiator.jpg" alt=""></div>
-                            <div class="swiper-slide"><img src="./assets/gladiator.jpg" alt=""></div>
-                            <div class="swiper-slide"><img src="./assets/gladiator.jpg" alt=""></div>
-                            <div class="swiper-slide"><img src="./assets/gladiator.jpg" alt=""></div>
-                            <div class="swiper-slide"><img src="./assets/gladiator.jpg" alt=""></div>
-                            <div class="swiper-slide"><img src="./assets/gladiator.jpg" alt=""></div>
-                            <div class="swiper-slide"><img src="./assets/gladiator.jpg" alt=""></div>
-                            <div class="swiper-slide"><img src="./assets/gladiator.jpg" alt=""></div>
-                            <div class="swiper-slide"><img src="./assets/gladiator.jpg" alt=""></div>
+                        <div class="swiper-wrapper d-flex align-items-start ">
+                            <div class="swiper-slide"><img class="img-fluid" src="./assets/gladiator.jpg" alt=""></div>
+                            <div class="swiper-slide"><img class="img-fluid" src="./assets/gladiator.jpg" alt=""></div>
+                            <div class="swiper-slide"><img class="img-fluid" src="./assets/gladiator.jpg" alt=""></div>
+                            <div class="swiper-slide"><img class="img-fluid" src="./assets/gladiator.jpg" alt=""></div>
+                            <div class="swiper-slide"><img class="img-fluid" src="./assets/gladiator.jpg" alt=""></div>
+                            <div class="swiper-slide"><img class="img-fluid" src="./assets/gladiator.jpg" alt=""></div>
+                            <div class="swiper-slide"><img class="img-fluid" src="./assets/gladiator.jpg" alt=""></div>
+                            <div class="swiper-slide"><img class="img-fluid" src="./assets/gladiator.jpg" alt=""></div>
+                            <div class="swiper-slide"><img class="img-fluid" src="./assets/gladiator.jpg" alt=""></div>
+                            <div class="swiper-slide"><img class="img-fluid" src="./assets/gladiator.jpg" alt=""></div>
+                            <div class="swiper-slide"><img class="img-fluid" src="./assets/gladiator.jpg" alt=""></div>
+                            <div class="swiper-slide"><img class="img-fluid" src="./assets/gladiator.jpg" alt=""></div>
+                            <div class="swiper-slide"><img class="img-fluid" src="./assets/gladiator.jpg" alt=""></div>
                         </div>
                         <div class="swiper-button-next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="carousel-control-next-icon" aria-hidden="true" data-bs-target="#slide" data-bs-slide="next"></span>
                             <span class="visually-hidden">Next</span>
                         </div>
                         <div class="swiper-button-prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="carousel-control-prev-icon" aria-hidden="true" data-bs-target="#slide"
+                            data-bs-slide="prev"></span>
                             <span class="visually-hidden">Previous</span>
                         </div>
                         <div class="swiper-pagination"></div>
                     </div>
-                    
+
 
                 </div>
             </div>
         </div>
         </div>
     </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./main js/main.js"></script>
