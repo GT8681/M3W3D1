@@ -1,7 +1,6 @@
 const swiper = new Swiper(".mySwiper", {
-  slidesPerView: 10,
-  centeredSlides:true,
-  centeredSlides: true,
+  slidesPerView: 6,
+  centeredSlides:false,
   spaceBetween: 0,
   pagination: {
     el: ".swiper-pagination",
@@ -13,8 +12,8 @@ const swiper = new Swiper(".mySwiper", {
   },
 });
 
-var appendNumber = 4;
-var prependNumber = 0;
+var appendNumber = 10;
+var prependNumber = 10;
 document
   .querySelector(".prepend-2-slides")
   .addEventListener("click", function (e) {
